@@ -785,13 +785,12 @@ input[type="checkbox"]:checked {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
 }
 
 .checkbox-text span {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   margin-right: 8px;

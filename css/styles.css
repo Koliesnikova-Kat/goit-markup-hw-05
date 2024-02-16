@@ -528,7 +528,8 @@ input[type="checkbox"]:checked {
 }
 
 .footer-form {
-  
+  display: flex;
+  gap: 24px;
 }
 
 .footer-form-email {
@@ -538,11 +539,6 @@ input[type="checkbox"]:checked {
   line-height: 1.5;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
-}
-
-.footer-form-display {
-  display: flex;
-  gap: 24px;
 }
 
 .email {
@@ -730,7 +726,6 @@ input[type="checkbox"]:checked {
 
 .form-element input {
   background-color: transparent;
-  outline: transparent;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -750,7 +745,6 @@ input[type="checkbox"]:checked {
 
 .form-element-comment textarea {
   background-color: transparent;
-  outline: transparent;
   width: 100%;
   height: 120px;
   flex-shrink: 0;
@@ -766,11 +760,11 @@ input[type="checkbox"]:checked {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-element textarea:focus {
+.form-element-comment textarea:focus {
   border-color: #4d5ae5;
 }
 
-.form-element textarea::placeholder {
+.form-element-comment textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.17;
@@ -778,12 +772,17 @@ input[type="checkbox"]:checked {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-element textarea:focus::placeholder {
+.form-element-comment textarea:focus::placeholder {
   color: #4d5ae5;
+}
+
+.form-text {
+  outline: transparent;
 }
 
 .form-text-comment {
   padding-top: 8px;
+  outline: transparent;
 }
 
 .form-check {
@@ -806,22 +805,21 @@ input[type="checkbox"]:checked {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   margin-right: 8px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox-text:hover span,
-.checkbox-text:focus span {
-  border-color: #404BBF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-check-text:checked + .checkbox-text span {
   background-color: #404BBF;
   border: none;
   fill: #F4F4FD;
+}
+
+.check-span {
+  display: inline-flex;
 }
 
 .privacy-policy {

@@ -726,6 +726,7 @@ input[type="checkbox"]:checked {
 
 .form-element input {
   background-color: transparent;
+  outline: transparent;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -745,6 +746,7 @@ input[type="checkbox"]:checked {
 
 .form-element-comment textarea {
   background-color: transparent;
+  outline: transparent;
   width: 100%;
   height: 120px;
   flex-shrink: 0;
@@ -805,7 +807,7 @@ input[type="checkbox"]:checked {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;

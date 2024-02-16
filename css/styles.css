@@ -528,18 +528,21 @@ input[type="checkbox"]:checked {
 }
 
 .footer-form {
-  display: flex;
-  gap: 24px;
-  align-items: flex-end;
+  
 }
 
 .footer-form-email {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   color: #fff;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.footer-form-display {
+  display: flex;
+  gap: 24px;
 }
 
 .email {
@@ -681,6 +684,14 @@ input[type="checkbox"]:checked {
   letter-spacing: 0.04em;
 }
 
+.form-element-comment label {
+  margin-bottom: 4px;
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
 .form-header {
   color: #2e2f42;
   text-align: center;
@@ -695,6 +706,12 @@ input[type="checkbox"]:checked {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
+}
+
+.form-element-comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -731,7 +748,7 @@ input[type="checkbox"]:checked {
   fill: #4d5ae5;
 }
 
-.form-element textarea {
+.form-element-comment textarea {
   background-color: transparent;
   outline: transparent;
   width: 100%;
@@ -742,7 +759,6 @@ input[type="checkbox"]:checked {
   border-radius: 4px;
   outline: none;
   resize: none;
-  margin-bottom: 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -794,7 +810,7 @@ input[type="checkbox"]:checked {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-text:hover span,

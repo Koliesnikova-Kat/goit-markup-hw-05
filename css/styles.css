@@ -807,12 +807,6 @@ input[type="checkbox"]:checked {
   fill: #F4F4FD;
 }
 
-.check-span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .privacy-policy {
   text-decoration: underline;
   color: #4d5ae5;
